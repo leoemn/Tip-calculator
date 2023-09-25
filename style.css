@@ -1,0 +1,168 @@
+body {
+    background: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Space Mono';
+}
+
+.splitter {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.main {
+    flex: 1;
+    background-color: white;
+    margin: 5% 20% 5% 20%;
+    border-radius: 20px;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 20px;
+    margin: 3% 5% 5%;
+
+}
+
+.bill {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tip {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.people {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    color: hsl(186, 14%, 43%);   
+    font-size: medium; 
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    background-color: hsl(189, 41%, 97%);
+    border: 0px;
+    border-radius: 5px;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-weight: 600;
+    font-size: 23px;
+    color: hsl(183, 100%, 15%)
+}
+
+input:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+    outline: none;
+}
+
+
+.input-wrapper {
+    position: relative;
+}
+
+.svg {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+input::placeholder {
+    font-family: 'Space Mono';
+    text-align: right;
+    font-size: 23px;
+    font-weight: 600;
+    color:  hsl(185, 41%, 84%);
+    margin-top: 3%;
+}
+
+.b1, .b2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b2 {
+    margin-top: 5%;
+}
+
+.tip input {
+    width: 29%;
+}
+
+.tip button {
+    height: 40px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    border: 0px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Mono';
+    font-weight: 600;
+    font-size: larger;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    flex: 1;
+    background-color: hsl(183, 100%, 15%);
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 3% 4% 3% 4%;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18%;
+    padding-left: 10%;
+}
+
+.p1 {
+    font-weight: 600;
+    font-size: 85%;
+    color: hsl(0, 0%, 100%);
+}
+
+.p2 {
+    font-size: 65%;
+    color: hsl(185, 41%, 84%);
+}
+
+.amount {
+    font-size: 40px;
+    font-weight: 600;
+    color: hsl(172, 67%, 45%);
+}
+
+footer {
+    font-size: smaller;
+    text-align: center;
+    width: 100%; 
+    background-color: brown;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
