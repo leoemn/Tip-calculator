@@ -21,6 +21,22 @@ function checkFields() {
   }
 }
 
+function resetTipButtonColors() {
+    tipButtons.forEach(button => {
+      button.style.backgroundColor = "hsl(183, 100%, 15%)"; // Original color
+      button.style.color = "hsl(0, 0%, 100%)"; // Original text color
+    });
+}
+
+tipButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      resetTipButtonColors(); // Reset all tip buttons to original color
+      tipPercent = parseFloat(e.target.textContent);
+      button.style.backgroundColor = 'hsl(172, 67%, 45%)'; // Change clicked button to new color
+      updateAmounts();
+    });
+  });
+
 // Function to update the tip and total amounts
 function updateAmounts() {
   if (numberOfPeople < 1) {
@@ -92,3 +108,5 @@ peopleInput.addEventListener("click", () => {
     errorMessage.style.display = 'none';
     peopleInput.style.border = '0px'
 });
+
+
