@@ -2,22 +2,23 @@ body {
     background: hsl(185, 41%, 84%);
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
     font-family: 'Space Mono';
+    align-items: center;
+    justify-items: center;
+    
 }
 
 .splitter {
     text-align: center;
-    margin-top: 3%;
+    margin-top: 7%;
 }
 
 .main {
-    flex: 1;
     background-color: white;
-    margin: 5% 20% 5% 20%;
     border-radius: 20px;
     display: flex;
+    margin-top: 5%;
+    width: 55%;
 }
 
 .left {
@@ -49,8 +50,19 @@ body {
 
 .label-text {
     color: hsl(186, 14%, 43%);   
-    font-size: medium; 
+    font-size: small; 
     font-weight: 600;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message {
+    font-size: small;
+    font-weight: 600;
+    color: red;
 }
 
 input {
@@ -62,7 +74,7 @@ input {
     text-align: right;
     font-family: 'Space Mono';
     font-weight: 600;
-    font-size: 23px;
+    font-size: 24px;
     color: hsl(183, 100%, 15%)
 }
 
@@ -95,7 +107,7 @@ input:hover, button:hover {
     cursor: pointer;
 }
 
-button:active {
+button:hover {
     background-color: hsl(172, 67%, 45%);
 }
 
@@ -170,7 +182,7 @@ button {
 }
 
 .reset {
-    margin-top: 20%;
+    margin-top: 10%;
     height: 45px;
     font-family: 'Space Mono';
     font-weight: 600;
@@ -186,7 +198,7 @@ footer {
     font-size: smaller;
     text-align: center;
     width: 100%; 
-    background-color: brown;
+    margin-top: 5%;
 }
 
 footer a { 
