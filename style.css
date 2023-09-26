@@ -91,6 +91,14 @@ input::placeholder {
     margin-top: 3%;
 }
 
+input:hover, button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(172, 67%, 45%);
+}
+
 .b1, .b2 {
     display: flex;
     justify-content: space-between;
@@ -104,7 +112,7 @@ input::placeholder {
     width: 29%;
 }
 
-.tip button {
+button {
     height: 40px;
     width: 30%;
     border-radius: 5px;
@@ -122,21 +130,24 @@ input::placeholder {
     border-radius: 20px;
     flex: 1;
     background-color: hsl(183, 100%, 15%);
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 3% 4% 3% 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 3% 3% 3% 3%;
 }
 
-.person {
+.person1, .person2 {
     display: flex;
     justify-content: space-between;
+}
+
+.person2 {
+    margin-top: -20%;
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    padding-top: 18%;
-    padding-left: 10%;
+    padding-top: 13%;
 }
 
 .p1 {
@@ -146,7 +157,9 @@ input::placeholder {
 }
 
 .p2 {
-    font-size: 65%;
+    margin-top: -15%;
+    font-weight: 600;
+    font-size: 75%;
     color: hsl(185, 41%, 84%);
 }
 
@@ -154,6 +167,19 @@ input::placeholder {
     font-size: 40px;
     font-weight: 600;
     color: hsl(172, 67%, 45%);
+}
+
+.reset {
+    margin-top: 20%;
+    height: 45px;
+    font-family: 'Space Mono';
+    font-weight: 600;
+    font-size: large;
+    background-color: hsl(180, 52%, 26%);
+    color:hsl(183, 100%, 15%);
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
 }
 
 footer {
